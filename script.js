@@ -24,7 +24,7 @@ $("#next-button").click(function() {
   // If the position is 4
   if (position === 4) {
     // Disable the next button
-    $("#next-button").prop("disabled",true);
+    $("#next-button").prop("disabled",false);
     $("#next-button").addClass("disabled");
   }
   // If the position is 2
