@@ -1,0 +1,100 @@
+body {
+  background: white;
+  color: #1b1b1b
+}
+
+#project-proposal {
+  width: 75%;
+  margin: 0 auto;
+}
+
+section {
+  min-height: 512px;
+  height: 100vh;
+  padding: 32px 0;
+}
+
+header {
+  text-align: center;
+}
+
+.slide {
+  padding: 32px;
+}
+
+.button-neutral {
+  background:  #fd3e7d;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  color: #333;
+  font-size: 32px;
+}
+
+.button-neutral:hover {
+  background:  #fd3e7d;
+  box-shadow: 5 10px 16px rgba(0, 0, 0, 0.5);
+}
+
+.button-positive {
+  background: #fd3e7d;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  color: #333;
+  font-size: 32px;
+  width: 100%;
+}
+
+.button-positive:hover {
+  background:  #fd3e7d;
+}
+
+.disabled {
+  background: #eee;
+}
+
+.disabled:hover {
+  background: #eee;
+  cursor: not-allowed;
+}
+
+.va-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#controls {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 32px;
+}
+
+#controls button {
+  width: 12.5%;
+  height: 64px;
+}
+
+#next-button {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+}
+
+#back-button {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+}
+
+#upload1{
+  font-size: 1rem;
+}
+
+#upload2{
+  font-size: .80rem;
+}
