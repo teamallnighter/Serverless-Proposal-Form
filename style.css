@@ -51,12 +51,12 @@ header {
 }
 
 .disabled {
-  background: #eee;
+  background: #fd3e7d;
 }
 
 .disabled:hover {
-  background: #eee;
-  cursor: not-allowed;
+  background: #fd3e7d;
+
 }
 
 .va-container {
