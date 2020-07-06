@@ -16,8 +16,3 @@ $("#to-project").click(function() {
   }, 1000);
 });
 
-$("#my-form").submit(function(e) {
-  e.preventDefault();
-
-
-

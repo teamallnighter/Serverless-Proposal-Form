@@ -14,7 +14,7 @@
 <meta name="theme-color" content="#1b1b1b">
 </head>
 <body>
-<form name="contact" action="/thank-you" netlify netlify-honeypot="bot-field" id="contact">  
+<form name="contact" method="POST" data-netlify="true"> 
   <section id="intro" class="slide landing">
     <div class="va-container">
       <div class="va-item" id="whatever">
@@ -34,7 +34,7 @@
       </header>
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" id="name" class="form-control" placeholder="Chris Connelly" required>
+        <input type="text" id="name" class="form-control" placeholder="Chris Connelly">
       </div> 
       <div class="form-group">
         <label for="email">Phone</label>
@@ -42,7 +42,7 @@
       </div> 
       <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" id="email" class="form-control" placeholder="me@chrisconnelly.dev" required>
+        <input type="email" id="email" class="form-control" placeholder="me@chrisconnelly.dev">
       </div> 
       <br>
       <button id="to-company" class="button-neutral">Your Business</button>
@@ -55,7 +55,7 @@
       </header>
       <div class="form-group">
         <label for="company">Company Name</label>
-        <input type="text" id="companyName" class="form-control" placeholder="Awesome Corp" required>
+        <input type="text" id="companyName" class="form-control" placeholder="Awesome Corp">
       </div> 
       <div class="form-group">
         <label for="name">Website</label>
