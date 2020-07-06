@@ -34,15 +34,15 @@
       </header>
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" id="name" class="form-control" placeholder="Chris Connelly">
+        <input type="text" id="name" name="name" class="form-control" placeholder="Chris Connelly">
       </div> 
       <div class="form-group">
-        <label for="email">Phone</label>
-        <input type="phone" id="phone" class="form-control" placeholder="(403) 477-3548">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" class="form-control" placeholder="(403) 477-3548">
       </div> 
       <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" id="email" class="form-control" placeholder="me@chrisconnelly.dev">
+        <input type="email" id="email" name="email" class="form-control" placeholder="me@chrisconnelly.dev">
       </div> 
       <br>
       <button id="to-company" class="button-neutral">Your Business</button>
@@ -54,16 +54,16 @@
         <p class="lead">Please provide your company name and website address. If you are not part of a company, please enter "individual", "Team" or some kind of description</p>
       </header>
       <div class="form-group">
-        <label for="company">Company Name</label>
-        <input type="text" id="companyName" class="form-control" placeholder="Awesome Corp">
+        <label for="companyname">Company Name</label>
+        <input type="text" id="companyName" name="companyname" class="form-control" placeholder="Awesome Corp">
       </div> 
       <div class="form-group">
-        <label for="name">Website</label>
-        <input type="url" id="website" class="form-control" placeholder="example.com">
+        <label for="website">Website</label>
+        <input type="url" id="website" name="website" class="form-control" placeholder="example.com">
       </div>
       <div class="form-group">
-        <label for="name">Industry</label>
-        <input type="text" id="industry" class="form-control" placeholder="Web Development">
+        <label for="industry">Industry</label>
+        <input type="text" id="industry" name="industry" class="form-control" placeholder="Web Development">
       </div>
       <br>
             <button id="to-project" class="button-neutral">The Project</button>
@@ -88,17 +88,17 @@
       </div> 
       <div class="form-group">
         <label for="budget">Budget</label>
-        <input type="number" id="budget" class="form-control" required>
+        <input type="number" id="budget" name="budget" class="form-control" required>
       </div>
       <div class="form-group">
         <label for="description">Project Description</label>
-        <textarea id="description" cols="100" rows="10" class="form-control" maxlength="10000" required></textarea>
+        <textarea id="description" name="description" cols="100" rows="10" class="form-control" maxlength="10000" required></textarea>
       </div> 
       <div class="form-group">
         <label for="upload">Upload</label>
           <p id="upload1">Please include any files you think may be helpful</p>
           <p id="upload2">IE: Logo, Color schemes and docs</p>
-        <input type="file" id="myfile" name="myfile" >
+        <input type="file" id="myfile" name="myfile" name="myfile" >
       </div> 
       <br>
       <p hidden>
