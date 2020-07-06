@@ -30,7 +30,7 @@ $("#next-button").click(function() {
   // If the position is 2
   if (position === 2) {
     // Enable the back button
-    $("#back-button").prop("disabled",true);
+    $("#back-button").prop("disabled",false);
     $("#back-button").removeClass("disabled");
   }
 });
@@ -42,7 +42,7 @@ $("#back-button").click(function() {
     scrollTop: $(".slide:nth-child("+position+")").offset().top
   }, 1000);
   if (position === 1) {
-    $("#back-button").prop("disabled",true);
+    $("#back-button").prop("disabled",false);
     $("#back-button").addClass("disabled");
   }
   if (position === 3) {
@@ -90,5 +90,5 @@ $("#submit-button").click(function() {
 
 // Hide the thank you message and disable the back button from the start
 $(".thank-you").hide();
-$("#back-button").prop("disabled",true);
+$("#back-button").prop("disabled",false);
 $("#back-button").addClass("disabled");
