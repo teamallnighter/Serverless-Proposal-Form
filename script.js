@@ -25,7 +25,7 @@ $("#next-button").click(function() {
   if (position === 4) {
     // Disable the next button
     $("#next-button").prop("disabled",false);
-    $("#next-button").addClass("disabled");
+    // $("#next-button").addClass("disabled");
   }
   // If the position is 2
   if (position === 2) {
@@ -90,5 +90,5 @@ $("#submit-button").click(function() {
 
 // Hide the thank you message and disable the back button from the start
 $(".thank-you").hide();
-$("#back-button").prop("disabled",true);
+$("#back-button").prop("disabled",false);
 $("#back-button").addClass("disabled");
