@@ -18,6 +18,15 @@ header {
   text-align: center;
 }
 
+a{
+  color:#1b1b1b;
+}
+
+a:hover{
+  color: #fd3e7d;
+
+}
+
 .button-neutral {
   background:  #fd3e7d;
   border: none;
@@ -133,4 +142,28 @@ label{
 
 #upload2{
   font-size: .80rem;
+}
+
+i{
+  font-size: 2rem;
+  color: #1b1b1b;
+}
+
+i:hover{
+  color: #fd3e7d;
+}
+
+.thankyou-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.thankyou{
+  margin: 2vw 2vh;
+  text-align: center;
 }
