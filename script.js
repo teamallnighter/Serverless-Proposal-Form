@@ -30,7 +30,7 @@ $("#next-button").click(function() {
   // If the position is 2
   if (position === 2) {
     // Enable the back button
-    $("#back-button").prop("disabled",false);
+    $("#back-button").prop("disabled",true);
     $("#back-button").removeClass("disabled");
   }
 });
