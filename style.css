@@ -52,10 +52,12 @@ header {
 
 .disabled {
   background: #fd3e7d;
+  display: none;
 }
 
 .disabled:hover {
   background: #fd3e7d;
+  display: none;
 
 }
 
