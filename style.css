@@ -3,10 +3,8 @@ body {
   color: #1b1b1b
 }
 
-
-
 form {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -20,19 +18,18 @@ header {
   text-align: center;
 }
 
-.slide {
-  padding: 32px;
-}
-
 .button-neutral {
   background:  #fd3e7d;
-  border-radius: 1px;
   border: none;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   color: #333;
   font-size: 32px;
   padding: 0px;
   margin:0px;
+  padding:10px;
+  font-size: 1rem;
+  border-radius: 10%;
+  border-style: solid;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .button-neutral:hover {
@@ -40,30 +37,6 @@ header {
   box-shadow: 5 10px 16px rgba(0, 0, 0, 0.5);
 }
 
-.button-positive {
-  background: #fd3e7d;
-  border-radius: 4px;
-  border: none;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
-  color: #333;
-  font-size: 32px;
-  width: 100%;
-}
-
-.button-positive:hover {
-  background:  #fd3e7d;
-}
-
-.disabled {
-  background: #fd3e7d;
-  display: none;
-}
-
-.disabled:hover {
-  background: #fd3e7d;
-  display: none;
-
-}
 
 .va-container {
   height: 100%;
@@ -73,28 +46,85 @@ header {
   text-align: center;
 }
 
-#controls {
-  width: 100%;
+#intro{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  padding:10%;
+}
+
+#begin{
+  padding:10px;
+  border-radius: 10%;
+  border-style: solid;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 2rem;
+}
+
+#Submit{
+  padding:10px;
+  border-radius: 10%;
+  border-style: solid;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 2rem;
+}
+
+#begin:hover{
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+label{
+  display: block;
   text-align: center;
-  position: fixed;
-  bottom: 32px;
+  line-height: 150%;
+  font-size: .85em;
 }
 
-#controls button {
-  width: 12.5%;
-  height: 64px;
+
+#you{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  padding:0;
+  margin:0;
 }
 
-#next-button {
-  position: fixed;
-  right: 16px;
-  bottom: 16px;
+#company{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  padding:0;
+  margin:0;
+
 }
 
-#back-button {
-  position: fixed;
-  left: 16px;
-  bottom: 16px;
+#project{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  padding:0;
+  margin:0;
+
+}
+
+#description{
+  width: 100%;
 }
 
 #upload1{

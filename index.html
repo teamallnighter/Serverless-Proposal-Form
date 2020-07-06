@@ -14,20 +14,24 @@
 <meta name="theme-color" content="#1b1b1b">
 </head>
 <body>
-<form id="1" name="proposal-form" netlify>
+<form name="contact" action="/thank-you" netlify netlify-honeypot="bot-field">  
   <section id="intro" class="slide landing">
     <div class="va-container">
-      <div class="va-item">
+      <div class="va-item" id="whatever">
         <img src="/assets/images/main.png" height="200">
         <h1>Project Proposal</h1>
         <p class="lead">Please fill in the information below as accurately as possible. This will help us provide a better estimate, otherwise help us to understand what other information we may need to move forward.</p>
       </div>
     </div>
+
+      <button id="begin" class="button-neutral">Lets Begin</button>
+
   </section>
-  <section id="2" class="slide">
+
+  <section class="slide" id="you">
       <header>
         <h2>You</h2>
-        <p class="lead">Please provide your name and email so I'll know who to contact and how.</p>
+        <p class="lead" >Please provide your contact information so I'll know who to contact and how.</p>
       </header>
       <div class="form-group">
         <label for="name">Name</label>
@@ -35,15 +39,17 @@
       </div> 
       <div class="form-group">
         <label for="email">Phone</label>
-        <input type="email" id="email" class="form-control" placeholder="(403) 477-3548">
+        <input type="phone" id="phone" class="form-control" placeholder="(403) 477-3548">
       </div> 
       <div class="form-group">
         <label for="email">Email</label>
         <input type="email" id="email" class="form-control" placeholder="me@chrisconnelly.dev" required>
       </div> 
+      <br>
+      <button id="to-company" class="button-neutral">Your Business</button>
   </section>
 
-  <section id="3" class="slide">
+  <section id="company" class="slide">
       <header>
         <h2>Your company information.</h2>
         <p class="lead">Please provide your company name and website address. If you are not part of a company, please enter "individual", "Team" or some kind of description</p>
@@ -58,10 +64,13 @@
       </div>
       <div class="form-group">
         <label for="name">Industry</label>
-        <input type="url" id="website" class="form-control" placeholder="Web Development">
+        <input type="text" id="industry" class="form-control" placeholder="Web Development">
       </div>
+      <br>
+            <button id="to-project" class="button-neutral">The Project</button>
+
   </section>
-  <section id="4" class="slide">
+  <section id="project" class="slide">
       <header>
         <h2>Your project's information.</h2>
         <p class="lead">Please choose the type of service you need, enter your budget for the project, and describe your project below.</p>
@@ -84,31 +93,24 @@
       </div>
       <div class="form-group">
         <label for="description">Project Description</label>
-        <textarea id="description" cols="12" class="form-control" maxlength="10000" required></textarea>
+        <textarea id="description" cols="100" rows="10" class="form-control" maxlength="10000" required></textarea>
       </div> 
-      <br>
       <div class="form-group">
         <label for="upload">Upload</label>
           <p id="upload1">Please include any files you think may be helpful</p>
           <p id="upload2">IE: Logo, Color schemes and docs</p>
-        <input type="file" id="myfile" name="myfile">
+        <input type="file" id="myfile" name="myfile" >
       </div> 
       <br>
-      <br>
-      <br>
-      <br>
-  <input class="button-neutral " id="submit" type="submit" value="Submit">
+      <p hidden>
+        <label>Don’t fill this out: <input type="text" name="bot-field"/>
+      <p>
+       <button type="submit" class="button-neutral id="submit"">Send</button>
   </section>
-
-  <div id="controls">
-    <div class="container">
-      <button id="back-button" class="button-neutral">&laquo;</button>
-      <button id="next-button" class="button-neutral">&raquo;</button>
-    </div>
-  </div>
 </form>
 <!-- partial -->
 <script src="/script.js"></script>
+<script src="/submit.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
