@@ -24,8 +24,10 @@ $("#next-button").click(function() {
   // If the position is 4
   if (position === 4) {
     // Disable the next button
-    $("#next-button").prop("disabled",false);
-    // $("#next-button").addClass("disabled");
+    $("#next-button").prop("disabled",true);
+    $("#next-button").addClass("disabled");
+    $("#back-button").prop("disabled",true);
+    $("#back-button").addClass("disabled");
   }
   // If the position is 2
   if (position === 2) {
@@ -41,13 +43,15 @@ $("#back-button").click(function() {
   $('html, body').animate({
     scrollTop: $(".slide:nth-child("+position+")").offset().top
   }, 1000);
-  if (position === 1) {
+  if (position === 4) {
     $("#back-button").prop("disabled",true);
     $("#back-button").addClass("disabled");
+    $("#next-button").prop("disabled",true);
+    $("#next-button").addClass("disabled");
   }
-  if (position === 3) {
-    $("#next-button").prop("disabled",false);
-    $("#next-button").removeClass("disabled");
+  if (position === 1) {
+    $("#back-button").prop("disabled",true);
+    $("#back-button").removeClass("disabled");
   }
 });
 
